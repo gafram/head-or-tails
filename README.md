@@ -1,2 +1,2 @@
-## Heads or Tails game
-# Sample Solidity Project 
+# Heads or Tails game
+## Sample Solidity Project 

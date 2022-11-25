@@ -17,7 +17,7 @@ contract HeadsOrTails {
         address payable winner;
     }
 
-    uint numGames;
+    uint public numGames;
     mapping (uint => Game) public games;
 
     function createGame(bytes32 _commit, bool _creatorSide, uint _deadline) public payable returns (uint gameID){

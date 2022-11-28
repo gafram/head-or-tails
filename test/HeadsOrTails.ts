@@ -42,6 +42,11 @@ describe("heads-or-tails", function () {
             
 
             expect(await headsOrTails.numGames()).to.equal(initialNumGames.toNumber() + 1);
+
+            const getGamesResponse = await headsOrTails.getGames();
+
+            console.log(getGamesResponse);
         });
+
     });
 });

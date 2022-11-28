@@ -84,4 +84,16 @@ contract HeadsOrTails {
         game.bank = 0;
     }   
 
+    // VIEW FUNCTIONS
+
+    // view function to get all games in mapping `games`
+    function getGames() public view returns (Game[] memory){
+        Game[] memory ret = new Game[](numGames);
+        for (uint i = 0; i < numGames; i++) {
+            ret[i] = games[i];
+        }
+        return ret;
+    } 
+
+
 }
